@@ -1,0 +1,42 @@
+---
+title: "final project-Word prediction"
+author: "saeed"
+date: "18/04/2020"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+
+## Introduction
+
+The goal of this exercise is to create a product to highlight the prediction algorithm that you have built and to provide an interface that can be accessed by others. For this project you must submit:
+
+A Shiny app that takes as input a phrase (multiple words) in a text box input and outputs a prediction of the next word.
+A slide deck consisting of no more than 5 slides created with R Studio Presenter (https://support.rstudio.com/hc/en-us/articles/200486468-Authoring-R-Presentations) pitching your algorithm and app as if you were presenting to your boss or an investor.
+
+## Creating the Model
+
+To create the prediction app I started using the data provided by coursera [Data](https://d396qusza40orc.cloudfront.net/dsscapstone/dataset/Coursera-SwiftKey.zip), and doing some preprocessing on data such as removing punctuations and numbers. After that I used NLP to create the model aka tokenizing the data.
+
+### Prediction
+
+To predict the next word the app will get a phrase from the user and based on the number of words entered it will use NLP algorithm and gives a result. there is an slider on the side of app to let the user choose how many words to be predicted to maximum of 5 words. There is aslo a checkbox to let the user check the frequency of possible next word.
+
+## Shiny App
+
+Below is a picture of the shiny App created for this project.
+
+```{r,echo=FALSE, out.width="100%"}
+knitr::include_graphics("C:/Users/S.kh/Pictures/Screenshots/Screenshot (4).png")
+```
+
+## Links
+
+--[ShinyApp](https://saeedk.shinyapps.io/wordpredict/)
+
+
+--[github](https://github.com/vyn66/Data-Science-Capstone)
